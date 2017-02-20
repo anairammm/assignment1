@@ -1,10 +1,13 @@
-console.log('\'Allo \'Allo!');
-	
+//console.log('\'Allo \'Allo!');
+$(document).ready(function() {
+    $('#fullpage').fullpage();
+});	
+
 d3.select('#bar').transition()
-    .duration(3000)
+    .duration(1000)
     .tween('width', function() {
-      var i = d3.interpolate(50, 350);
-      var ci = d3.interpolate('#FFF', '#E82792');
+      var i = d3.interpolate(100, 300);
+      var ci = d3.interpolate('#73A39B', '#A2583B');
       return function(t) {
           this.style.width = i(t) + 'px';
           this.style.background = ci(t);
@@ -12,10 +15,10 @@ d3.select('#bar').transition()
     });
     
 d3.select('#bar2').transition()
-    .duration(3000)
+    .duration(1500)
     .tween('width', function() {
-      var i = d3.interpolate(50, 300);
-      var ci = d3.interpolate('#FFF', '#DD17FF');
+      var i = d3.interpolate(100, 275);
+      var ci = d3.interpolate('#73A39B', '#A2583B');
       return function(t) {
           this.style.width = i(t) + 'px';
           this.style.background = ci(t);
@@ -23,20 +26,20 @@ d3.select('#bar2').transition()
 	});
 		
 d3.select('#bar3').transition()
-    .duration(3000)
+    .duration(2000)
     .tween('width', function() {
-      var i = d3.interpolate(50, 500);
-      var ci = d3.interpolate('#FFF', '#7009E8');
+      var i = d3.interpolate(100, 200);
+      var ci = d3.interpolate('#73A39B', '#A2583B');
       return function(t) {
           this.style.width = i(t) + 'px';
           this.style.background = ci(t);
       };
     });
 d3.select('#bar4').transition()
-    .duration(3000)
+    .duration(2500)
     .tween('width', function() {
-      var i = d3.interpolate(50, 400);
-      var ci = d3.interpolate('#FFF', '#1C0AFF');
+      var i = d3.interpolate(100, 160);
+      var ci = d3.interpolate('#73A39B', '#A2583B');
       return function(t) {
           this.style.width = i(t) + 'px';
           this.style.background = ci(t);
@@ -70,3 +73,5 @@ function transition() {
     
     i = (i + 1) % data.length;
 }
+
+/*full page javascript demo*/

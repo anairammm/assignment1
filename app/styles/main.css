@@ -6,12 +6,10 @@
 }
 
 body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+  font-family: 'Cabin Sketch', sans-serif;
 }
 
-.hero-unit {
+/*.hero-unit {
   margin: 50px auto 0 auto;
   width: 300px;
   font-size: 18px;
@@ -26,40 +24,78 @@ body {
   font-size: 60px;
   line-height: 1;
   letter-spacing: -1px;
-}
+}*/
 
 /*mine*/
 
-
 #bar {
 	color:#FFF;
-	font-weight:bold;
     height: 20px;
     width: 20px;
-    background: #2394F5;
 	padding:20px;
 }
 #bar2 {
 	color:#FFF;
-	font-weight:bold;
     height: 20px;
     width: 20px;
-    background: #2394F5;
 	padding:20px;
 }
 #bar3 {
 	color:#FFF;
-	font-weight:bold;
     height: 20px;
     width: 20px;
-    background: #2394F5;
 	padding:20px;
 }
 #bar4 {
 	color:#FFF;
-	font-weight:bold;
     height: 20px;
     width: 20px;
-    background: #2394F5;
 	padding:20px;
+}
+
+/*fullpage demo*/
+/*body {
+  font: normal 2em/1.5em "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+}*/
+
+button.btn {
+  margin-top: 40px;
+  background: #66bb6a;
+  border-radius: 4px;
+}
+
+section {
+    color: #fff;
+}
+  .zero {
+    background-color: #424242;
+  }
+  .first {
+    background-color: #73A39B;
+  }
+  .second {
+    background-color: #424242;
+  }
+  .third {
+    background-color: #73A39B;
+  }
+  .fourth {
+    background-color: #424242;
+  }
+
+.fourth button {
+  margin-top: 20px;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+#fp-nav ul li a span {
+  background: #fff;
+}
+
+img {
+  margin: 0 auto;
 }

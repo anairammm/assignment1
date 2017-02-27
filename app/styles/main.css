@@ -9,25 +9,13 @@ body {
   font-family: 'Cabin Sketch', sans-serif;
 }
 
-/*.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-}
-
-.hero-unit h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
-}*/
-
 /*mine*/
-
+h1 {
+	font-size:4em;
+}
+p {
+	font-size:1.5em;
+}
 #bar {
 	color:#FFF;
     height: 20px;
@@ -68,9 +56,6 @@ button.btn {
 section {
     color: #fff;
 }
-  .zero {
-    background-color: #424242;
-  }
   .first {
     background-color: #73A39B;
   }
@@ -83,17 +68,12 @@ section {
   .fourth {
     background-color: #424242;
   }
-
-.fourth button {
-  margin-top: 20px;
-}
+  .fifth {
+    background-color: #73A39B;
+  }
 
 p {
   margin-bottom: 30px;
-}
-
-#fp-nav ul li a span {
-  background: #fff;
 }
 
 img {

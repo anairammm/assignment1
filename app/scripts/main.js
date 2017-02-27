@@ -1,7 +1,37 @@
 //console.log('\'Allo \'Allo!');
-$(document).ready(function() {
-    $('#fullpage').fullpage();
-});	
+$('#fullpage').fullpage({
+	responsiveWidth: 640,
+	css3: true,
+	anchors: ['firstPage', 'secondPage', '3rdPage', 'fourthPage', 'fifthPage'],
+	navigation: true,
+	navigationPosition: 'right',
+	navigationTooltips: ['Main', 'About', 'Education', 'Experience', 'Skills'],
+	onLeave: function(index, nextIndex, direction){	
+if (index == 1) {
+    $('.h_two').addClass('animated fadeInRightBig');
+	$('.text2').addClass('animated bounceInUp');
+	$('.divider').addClass('animated zoomIn');
+}
+/*else if(index == 2 && direction == 'up'){
+	$('.h_two').removeClass('animated fadeInUp');
+	$('.text2').removeClass('animated fadeInDown');
+	$('.divider').removeClass('animated fadeOut');
+}*/
+if (index == 2) {
+    $('.h_three').addClass('animated fadeInLeft');
+	$('.text3').addClass('animated zoomInRight');
+	$('.text3_1').addClass('animated zoomInLeft');
+	$('.divider').addClass('animated zoomIn');
+}
+if (index == 3) {
+    $('.h_four').addClass('animated fadeInRight');
+	$('.text4').addClass('animated fadeInUp');
+	$('.divider').addClass('animated zoomIn');
+}
+if (index == 4) {
+    $('.h_five').addClass('animated fadeInLeft');
+	$('#bar', '#bar2', '#bar3', '#bar4').addClass('animated fadeInUp');
+	$('.divider').addClass('animated zoomIn');
 
 d3.select('#bar').transition()
     .duration(1000)
@@ -45,10 +75,12 @@ d3.select('#bar4').transition()
           this.style.background = ci(t);
       };
     });
+	}
+}
+});
 
 
-
-var i = 0;
+/*var i = 0;
 var data = [
 	'<title>MarianaNuman | WebDesigner</title>'
 ];
@@ -72,6 +104,6 @@ function transition() {
         });
     
     i = (i + 1) % data.length;
-}
+}*/
 
 /*full page javascript demo*/

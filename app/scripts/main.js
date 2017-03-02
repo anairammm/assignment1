@@ -1,16 +1,19 @@
 //console.log('\'Allo \'Allo!');
+$(document).ready(function() {
 $('#fullpage').fullpage({
 	responsiveWidth: 640,
-	css3: true,
-	anchors: ['firstPage', 'secondPage', '3rdPage', 'fourthPage', 'fifthPage'],
+	verticalCentered: false,
+	css3: false,
+	anchors: ['firstPage', 'secondPage', '3rdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
 	navigation: true,
 	navigationPosition: 'right',
-	navigationTooltips: ['Main', 'About', 'Education', 'Experience', 'Skills'],
+	navigationTooltips: ['Main', 'About', 'Education', 'Experience', 'Skills', 'Contact'],
 	onLeave: function(index, nextIndex, direction){	
 if (index == 1) {
     $('.h_two').addClass('animated fadeInRightBig');
 	$('.text2').addClass('animated bounceInUp');
 	$('.divider').addClass('animated zoomIn');
+	$('#second').addClass('animated bounceInUp');
 }
 /*else if(index == 2 && direction == 'up'){
 	$('.h_two').removeClass('animated fadeInUp');
@@ -32,7 +35,13 @@ if (index == 4) {
     $('.h_five').addClass('animated fadeInLeft');
 	$('#bar', '#bar2', '#bar3', '#bar4').addClass('animated fadeInUp');
 	$('.divider').addClass('animated zoomIn');
-
+}
+if (index == 5) {
+    $('.h_five').addClass('animated fadeInLeft');
+	$('#bar', '#bar2', '#bar3', '#bar4').addClass('animated fadeInUp');
+	$('.divider').addClass('animated zoomIn');
+}
+		
 d3.select('#bar').transition()
     .duration(1000)
     .tween('width', function() {
@@ -43,6 +52,7 @@ d3.select('#bar').transition()
           this.style.background = ci(t);
       };      
     });
+	});
     
 d3.select('#bar2').transition()
     .duration(1500)

@@ -49,28 +49,45 @@ button.btn {
   background: #66bb6a;
   border-radius: 4px;
 }
-
-section {
-    color: #fff;
+	#first,
+	#second,
+	#third,
+	#fourth,
+	#fifth{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+  #first {
+	background-image:url(../images/mypic.png);
+    background-color: #73A39B;
+  }
+  #second {
+	background-color: #424242;
+  }
+  #third {
+    background-color: #73A39B;
+  }
+  #fourth {
+    background-color: #424242;
+  }
+  #fifth {
+    background-color: #73A39B;
+  }
+  #sixth{
+	background-color: #424242;
 }
-  .first {
-    background-color: #73A39B;
-  }
-  .second {
-    background-color: #424242;
-  }
-  .third {
-    background-color: #73A39B;
-  }
-  .fourth {
-    background-color: #424242;
-  }
-  .fifth {
-    background-color: #73A39B;
-  }
+.mypic {
+	background-color:#73A39B;
+	opacity: 0.7;
+}
 
 p {
   margin-bottom: 30px;
 }
 
 * { color:#fff; text-decoration: none;}
+
+.footer{
+	padding: 50px 0;
+}
+

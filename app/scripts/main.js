@@ -4,42 +4,25 @@ $('#fullpage').fullpage({
 	responsiveWidth: 640,
 	verticalCentered: false,
 	css3: false,
-	anchors: ['firstPage', 'secondPage', '3rdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
+	anchors: ['firstPage', 'secondPage', '3rdPage', 'fourthPage'],
 	navigation: true,
+	paddingTop: '0px',
+	paddingBottom: '0px',
 	navigationPosition: 'right',
-	navigationTooltips: ['Main', 'About', 'Education', 'Experience', 'Skills', 'Contact'],
+	navigationTooltips: ['Main', 'About', 'Skills', 'Contact'],
 	onLeave: function(index, nextIndex, direction){	
 if (index == 1) {
-    $('.h_two').addClass('animated fadeInRightBig');
-	$('.text2').addClass('animated bounceInUp');
-	$('.divider').addClass('animated zoomIn');
 	$('#second').addClass('animated bounceInUp');
+	//$('#aboutbgtext').addClass('animated rubberBand');
 }
-/*else if(index == 2 && direction == 'up'){
-	$('.h_two').removeClass('animated fadeInUp');
-	$('.text2').removeClass('animated fadeInDown');
-	$('.divider').removeClass('animated fadeOut');
-}*/
 if (index == 2) {
-    $('.h_three').addClass('animated fadeInLeft');
-	$('.text3').addClass('animated zoomInRight');
-	$('.text3_1').addClass('animated zoomInLeft');
-	$('.divider').addClass('animated zoomIn');
+	$('#third').addClass('animated bounceInUp');
 }
 if (index == 3) {
-    $('.h_four').addClass('animated fadeInRight');
-	$('.text4').addClass('animated fadeInUp');
-	$('.divider').addClass('animated zoomIn');
+	$('#fourth').addClass('animated bounceInUp');
 }
 if (index == 4) {
-    $('.h_five').addClass('animated fadeInLeft');
-	$('#bar', '#bar2', '#bar3', '#bar4').addClass('animated fadeInUp');
-	$('.divider').addClass('animated zoomIn');
-}
-if (index == 5) {
-    $('.h_five').addClass('animated fadeInLeft');
-	$('#bar', '#bar2', '#bar3', '#bar4').addClass('animated fadeInUp');
-	$('.divider').addClass('animated zoomIn');
+	$('.skills').addClass('animated fadeInUp');
 }
 		
 d3.select('#bar').transition()
@@ -52,7 +35,6 @@ d3.select('#bar').transition()
           this.style.background = ci(t);
       };      
     });
-	});
     
 d3.select('#bar2').transition()
     .duration(1500)
@@ -86,7 +68,7 @@ d3.select('#bar4').transition()
       };
     });
 	}
-}
+}); //fullpage function close
 });
 
 /*typewrite text*/
@@ -94,7 +76,7 @@ var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
         this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
+        this.period = parseInt(period, 10) || 1500;
         this.txt = '';
         this.tick();
         this.isDeleting = false;
@@ -146,6 +128,73 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+/*about content*/
+$(function(){
+    $(".aboutp").hide();
+	$(".aboutp2").hide();
+	$(".aboutp3").hide();
+	$(".abouth4").hide();
+	$(".about2h4").hide();
+	$(".about3h4").hide();
+});
+
+var clicked=true;
+$(".aboutme").on('click', function(){  //,".aboutpic"
+    if(clicked)
+    {
+        clicked=false;
+        $(".aboutme").animate({height: '255'});
+		$(".aboutp").hide();
+		$(".abouth4").hide();
+    }
+    else
+    {
+        clicked=true;
+        $(".aboutme").animate({height: '500'});
+		$(".aboutp").show();
+		$(".abouth4").show();
+    }
+});
+
+var clicked=true;
+$(".aboutme2").on('click', function(){  //,".aboutpic"
+    if(clicked)
+    {
+        clicked=false;
+        $(".aboutme2").animate({height: '255'});
+		$(".aboutp2").hide();
+		$(".about2h4").hide();
+    }
+    else
+    {
+        clicked=true;
+        $(".aboutme2").animate({height: '500'});
+		$(".aboutp2").show();
+		$(".about2h4").show();
+    }
+});
+
+
+var clicked=true;
+$(".aboutme3").on('click', function(){  //,".aboutpic"
+    if(clicked)
+    {
+        clicked=false;
+        $(".aboutme3").animate({height: '255'});
+		$(".aboutp3").hide();
+		$(".about3h4").hide();
+    }
+    else
+    {
+        clicked=true;
+        $(".aboutme3").animate({height: '500'});
+		$(".aboutp3").show();
+		$(".about3h4").show();
+    }
+});
+/*end about content*/
+
 
 /*var i = 0;
 var data = [

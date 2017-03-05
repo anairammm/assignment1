@@ -1,17 +1,133 @@
 body {
 	  font-family: 'Cabin Sketch', sans-serif;
-	  background-color:#73A39B;
+	  background-color:#424242;
 	  text-align: center;
 	  color:#fff;
 	  padding-top:10em;
 }
-
-/*mine*/
-h1 {
-	font-size:4em;
+#first {
+	background-image:url("../images/beach.jpg");
+	background-size:cover;
+	background-attachment:fixed;
 }
-p {
-	font-size:1.5em;
+.section {
+	box-shadow: 0 0 20px #000;
+}
+#aboutbgtext, #contactbgtext, #expbgtext {
+	opacity:0.2;
+}
+#aboutbgtext span {
+	position:fixed;
+	font-size:10em;
+    top: 20;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+#expbgtext span {
+	position:fixed;
+	font-size:10em;
+    top: 20;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+#contactbgtext span {
+	position:fixed;
+	font-size:10em;
+    top: 20;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.topbar{
+	height:10px;
+	margin:0;
+	background-color:#73A39B;
+	box-shadow: 0 0 20px #000;
+}
+.aboutp, .aboutp2, .aboutp3{
+	margin-top:0px;
+	font-family:"Rambla";
+	font-size:1em;
+	padding-top:20px;
+	padding-left:5px;
+	padding-right:10px;
+}
+.aboutme {
+	background-image:url("../images/mypic.png");
+	background-repeat:no-repeat;
+	background-position: bottom;
+	cursor:pointer;
+	position:relative;
+	background-color: #73A39B;
+	margin-top:-21px;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow: 0 10px 10px #000;
+	border-radius: 0px 0px 135px 135px;
+    width: 255px;
+    height: 255px;	
+}
+
+.aboutme2 {
+	background-image:url("../images/ucflogo.png");
+	background-repeat:no-repeat;
+	background-position: bottom;
+	cursor:pointer;
+	position:relative;
+	background-color: #73A39B;
+	margin-top:-21px;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow: 0 10px 10px #000;
+	border-radius: 0px 0px 135px 135px;
+    width: 255px;
+    height: 255px;	
+}
+.aboutp3{
+	margin-top:0px;
+	font-family:"Rambla";
+	padding-top:20px;
+	padding-left:5px;
+	padding-right:10px;
+}
+.abouth4, .about2h4, .about3h4{
+	margin-top:0px;
+	font-family:"Cabin Sketch";
+	padding-top:20px;
+	padding-left:5px;
+	padding-right:10px;
+}
+.aboutme3 {
+	background-image:url("../images/workicon.png");
+	background-repeat:no-repeat;
+	background-position: bottom;
+	cursor:pointer;
+	position:relative;
+	background-color: #73A39B;
+	margin-top:-21px;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow: 0 10px 10px #000;
+	border-radius: 0px 0px 135px 135px;
+    width: 255px;
+    height: 255px;	
+}
+#icon_prefix{
+	width:50%;
+}
+#icon_telephone{
+	width:50%;
+}
+#email {
+	width: 50%;
+}
+#icon_prefix2{
+	width:50%;
 }
 #bar {
 	color:#FFF;
@@ -37,30 +153,15 @@ p {
     width: 20px;
 	padding:20px;
 }
-
-/*fullpage demo*/
-/*body {
-  font: normal 2em/1.5em "Helvetica Neue", Arial, sans-serif;
-  color: #fff;
-}*/
-
-button.btn {
-  margin-top: 40px;
-  background: #66bb6a;
-  border-radius: 4px;
-}
-	#first,
+	/*#first,
 	#second,
 	#third,
-	#fourth,
-	#fifth{
+	#fourth{
 		background-size: cover;
 		background-attachment: fixed;
 	}
-  #first {
-	background-image:url(../images/mypic.png);
     background-color: #73A39B;
-  }
+  }*/
   #second {
 	background-color: #424242;
   }
@@ -70,24 +171,3 @@ button.btn {
   #fourth {
     background-color: #424242;
   }
-  #fifth {
-    background-color: #73A39B;
-  }
-  #sixth{
-	background-color: #424242;
-}
-.mypic {
-	background-color:#73A39B;
-	opacity: 0.7;
-}
-
-p {
-  margin-bottom: 30px;
-}
-
-* { color:#fff; text-decoration: none;}
-
-.footer{
-	padding: 50px 0;
-}
-

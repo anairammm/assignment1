@@ -1,22 +1,84 @@
 body {
 	  font-family: 'Cabin Sketch', sans-serif;
-	  background-color:#424242;
 	  text-align: center;
 	  color:#fff;
 	  padding-top:10em;
 }
-#first {
-	background-image:url("../images/beach.jpg");
+.section{
+	text-align:center;
+}
+h1{
+	margin-top:30%;
+}
+button{
+	background-color:#424242;
+}
+#first, #second, #third, #fourth {
 	background-size:cover;
 	background-attachment:fixed;
+	z-index:auto;
+}
+#first {
+	background-image:url("../images/beach.png");
+}
+#second{
+	background-color:#424242;
+}
+#third {
+	background-image:url("../images/wave.png");
+}
+#fourth{
+	background-color:#424242;
+}
+.icons{
+	position:fixed;
+	top: 20;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.skills2{
+	background-color:#424242;box-shadow: 0 0 20px #000;
+	background-attachment:fixed;
+	padding:10px;
+}
+.card{
+	box-shadow: 0 0 20px #000;
+}
+.card-content{
+	color:#424242;
+}
+#first span {
+	color:white;
+}
+.left-align{
+	font-family:'Rambla';
+}
+.white-text {
+	text-align:center;
 }
 .section {
 	box-shadow: 0 0 20px #000;
 }
-#aboutbgtext, #contactbgtext, #expbgtext {
+.aboutbgtext, .contactbgtext/*, .expbgtext*/ {
 	opacity:0.2;
 }
-#aboutbgtext span {
+.expbgtext{
+	color:#424242;
+	opacity:0.4;
+}
+.aboutbgtext {
+	position:fixed;
+	font-size:10em;
+	margin-bottom:auto;
+    top: 20;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.expbgtext {
 	position:fixed;
 	font-size:10em;
     top: 20;
@@ -25,16 +87,7 @@ body {
     right: 0;
     z-index: -1;
 }
-#expbgtext span {
-	position:fixed;
-	font-size:10em;
-    top: 20;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
-#contactbgtext span {
+.contactbgtext {
 	position:fixed;
 	font-size:10em;
     top: 20;
@@ -45,52 +98,14 @@ body {
 }
 .topbar{
 	height:10px;
-	margin:0;
-	background-color:#73A39B;
+	top:0px;
+	background-color:#47979F;
 	box-shadow: 0 0 20px #000;
 }
 .aboutp, .aboutp2, .aboutp3{
 	margin-top:0px;
 	font-family:"Rambla";
 	font-size:1em;
-	padding-top:20px;
-	padding-left:5px;
-	padding-right:10px;
-}
-.aboutme {
-	background-image:url("../images/mypic.png");
-	background-repeat:no-repeat;
-	background-position: bottom;
-	cursor:pointer;
-	position:relative;
-	background-color: #73A39B;
-	margin-top:-21px;
-	margin-left:auto;
-	margin-right:auto;
-	box-shadow: 0 10px 10px #000;
-	border-radius: 0px 0px 135px 135px;
-    width: 255px;
-    height: 255px;	
-}
-
-.aboutme2 {
-	background-image:url("../images/ucflogo.png");
-	background-repeat:no-repeat;
-	background-position: bottom;
-	cursor:pointer;
-	position:relative;
-	background-color: #73A39B;
-	margin-top:-21px;
-	margin-left:auto;
-	margin-right:auto;
-	box-shadow: 0 10px 10px #000;
-	border-radius: 0px 0px 135px 135px;
-    width: 255px;
-    height: 255px;	
-}
-.aboutp3{
-	margin-top:0px;
-	font-family:"Rambla";
 	padding-top:20px;
 	padding-left:5px;
 	padding-right:10px;
@@ -102,13 +117,13 @@ body {
 	padding-left:5px;
 	padding-right:10px;
 }
-.aboutme3 {
-	background-image:url("../images/workicon.png");
+.aboutme {
+	background-image:url("../images/mypic.png");
 	background-repeat:no-repeat;
 	background-position: bottom;
 	cursor:pointer;
 	position:relative;
-	background-color: #73A39B;
+	background-color: #47979F;
 	margin-top:-21px;
 	margin-left:auto;
 	margin-right:auto;
@@ -117,57 +132,85 @@ body {
     width: 255px;
     height: 255px;	
 }
+.aboutme2 {
+	background-image:url("../images/ucflogo.png");
+	background-repeat:no-repeat;
+	background-position: bottom;
+	cursor:pointer;
+	position:relative;
+	background-color: #47979F;
+	margin-top:-21px;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow: 0 10px 10px #000;
+	border-radius: 0px 0px 135px 135px;
+    width: 255px;
+    height: 255px;	
+}
+.aboutme3 {
+	background-image:url("../images/workicon.png");
+	background-repeat:no-repeat;
+	background-position: bottom;
+	cursor:pointer;
+	position:relative;
+	background-color: #47979F;
+	margin-top:-21px;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow: 0 10px 10px #000;
+	border-radius: 0px 0px 135px 135px;
+    width: 255px;
+    height: 255px;	
+}
+.cont{
+	cursor:pointer;
+	position:relative;
+	background-color: #47979F;
+	margin-top:-21px;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow: 0 10px 10px #000;
+	border-radius: 0px 0px 135px 135px;
+    width: 700px auto;
+    height:420px;	
+}
 #icon_prefix{
-	width:50%;
+	width:70%;
 }
 #icon_telephone{
-	width:50%;
+	width:70%;
 }
 #email {
-	width: 50%;
+	width:70%;
 }
 #icon_prefix2{
-	width:50%;
+	width:70%;
 }
 #bar {
 	color:#FFF;
-    height: 20px;
+	box-shadow: 0 0 20px #A2583B;
+    height: 40px;
     width: 20px;
 	padding:20px;
 }
 #bar2 {
 	color:#FFF;
-    height: 20px;
+	box-shadow: 0 0 20px #A2583B;
+    height: 40px;
     width: 20px;
 	padding:20px;
 }
 #bar3 {
 	color:#FFF;
-    height: 20px;
+	box-shadow: 0 0 20px #A2583B;
+    height: 40px;
     width: 20px;
 	padding:20px;
 }
 #bar4 {
 	color:#FFF;
-    height: 20px;
+	box-shadow: 0 0 20px #A2583B;
+    height: 40px;
     width: 20px;
 	padding:20px;
 }
-	/*#first,
-	#second,
-	#third,
-	#fourth{
-		background-size: cover;
-		background-attachment: fixed;
-	}
-    background-color: #73A39B;
-  }*/
-  #second {
-	background-color: #424242;
-  }
-  #third {
-    background-color: #73A39B;
-  }
-  #fourth {
-    background-color: #424242;
-  }
